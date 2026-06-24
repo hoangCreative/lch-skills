@@ -1,0 +1,25 @@
+{
+  "_expect_fail": ["C1"],
+  "input": "Why won't my colleague speak directly to his mother-in-law? I want his real reason.",
+  "pack": "none",
+  "no_pack": false,
+  "permissibility": "propriety-limit",
+  "shape": "phenomenon",
+  "mode": "structural",
+  "l6_falsify": "carve-out",
+  "terminus": {
+    "kind": "propriety_limit",
+    "blocked_resolution": null,
+    "resolves_when": "the boundary is the answer",
+    "floors": [
+      {"type": "relational_role", "anchor": "a debt being honored", "grounding": "medium", "evidence": "the avoidance is customary", "l6_survived": true, "proposal": false},
+      {"type": "honor", "anchor": "protecting his standing", "grounding": "medium", "evidence": "face before kin", "l6_survived": true, "proposal": false}
+    ]
+  },
+  "selection_audit": {
+    "candidates": ["relational_role", "honor"],
+    "anti_default_check": "ran",
+    "banned_tiebreaker_used": "none"
+  },
+  "phase2": "what to watch"
+}

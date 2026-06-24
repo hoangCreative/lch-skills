@@ -1,0 +1,25 @@
+{
+  "_expect_fail": ["C3"],
+  "input": "I am keeping the family shop open even though it loses money.",
+  "pack": "none",
+  "no_pack": false,
+  "permissibility": "ok",
+  "shape": "action",
+  "mode": "personal",
+  "l6_falsify": "held",
+  "terminus": {
+    "kind": "held_conjunctive",
+    "blocked_resolution": null,
+    "resolves_when": "both remain operative together across the situation",
+    "floors": [
+      {"type": "relational_role", "anchor": "to keep the family business alive", "grounding": "high", "evidence": "explicit statement about the family legacy", "l6_survived": true, "proposal": false},
+      {"type": "open_longing", "anchor": "to be seen as worthy", "grounding": "low", "evidence": "thin, inferred", "l6_survived": false, "proposal": true}
+    ]
+  },
+  "selection_audit": {
+    "candidates": ["relational_role", "open_longing"],
+    "anti_default_check": "ran",
+    "banned_tiebreaker_used": "named: the stated legacy"
+  },
+  "phase2": "..."
+}

@@ -1,0 +1,24 @@
+{
+  "_expect_fail": ["C5"],
+  "input": "I said I would help him move, so I will.",
+  "pack": "none",
+  "no_pack": false,
+  "permissibility": "ok",
+  "shape": "action",
+  "mode": "personal",
+  "l6_falsify": "held",
+  "terminus": {
+    "kind": "single",
+    "blocked_resolution": null,
+    "resolves_when": "settled",
+    "floors": [
+      {"type": "relational_role", "anchor": "to honor a promise", "grounding": "medium", "evidence": "survives one more why down to love, so this is the floor", "l6_survived": true, "proposal": false}
+    ]
+  },
+  "selection_audit": {
+    "candidates": ["relational_role", "measurable_need"],
+    "anti_default_check": "ran",
+    "banned_tiebreaker_used": "named: the spoken commitment"
+  },
+  "phase2": "..."
+}

@@ -12,12 +12,13 @@ The thesis this repository is built on, and the one its testing keeps confirming
 |---|---|---|---|
 | [ground-or-abstain](skills/ground-or-abstain) | A verification discipline. Ground every load-bearing claim in a real source consulted this turn, or abstain and say it is unverified. | **Released, v2.3.0** | Apache-2.0 |
 | [skill-upgrade](skills/skill-upgrade) | The process that takes a behavioral skill to publish-grade and beyond. Used to harden ground-or-abstain to v2.3.0. | Available, v1.0.0 | Apache-2.0 |
-| what-for-and-how | Intent excavation. Drill five layers of "what for" to the real longing before proposing any action. | Planned | TBD |
+| [debug-external-first](skills/debug-external-first) | A debugging reflex. When something breaks, search the community first before guessing a cause from memory or iterating locally. | **Released, v1.0.0** | Apache-2.0 |
+| [what-for-and-how](skills/what-for-and-how) | Intent excavation. Drill layers of "what for" to the real longing before proposing any action, with detachable culture packs. | **Released, v3.4.0** | Apache-2.0 |
 | luu | A session-close protocol for a personal knowledge vault. | Planned (personal tooling) | TBD |
 | verbal-explanation | Turns drafted text into a real human Vietnamese speaking voice. | Not slated for release (personal IP) | All rights reserved |
 | lch-partner | The full operating system for working with LCH as a thinking partner. | Not slated for release (personal IP) | All rights reserved |
 
-The first release centers on `ground-or-abstain`, with `skill-upgrade` (the process used to harden it) alongside. The rest are listed so the system is legible as a whole. Two of them (`verbal-explanation`, `lch-partner`) encode a personal voice and a personal portrait and are kept private by design.
+The open release ships four skills: `ground-or-abstain`, `skill-upgrade`, `debug-external-first`, and `what-for-and-how`. The rest are listed so the system is legible as a whole. Two of them (`verbal-explanation`, `lch-partner`) encode a personal voice and a personal portrait and are kept private by design.
 
 ## ground-or-abstain in one paragraph
 

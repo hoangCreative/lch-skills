@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "engine": "what-for-and-how",
+  "origin": "frozen from the v3.2 adversarial stress-test (workflow wumxuv5v1): 28 cases that failed across independent lenses",
+  "how_to_use": "Run the engine on each input emitting the cascade-output JSON shape (see scripts/check_cascade.py header), save outputs, then run scripts/check_cascade.py over them. The machine-checkable assertions (C1-C5) are enforced by the checker; the per-case review_assertions are for human/lens review.",
+  "cases": [
+    {
+      "id": "hc-01-eulogy",
+      "dim": "heldset_conjunctive",
+      "input": "My older brother died Tuesday. I'm the only one in the family who can really speak in public, so I told everyone I'll give the eulogy. I keep rewriting it at 3am, I want it to be perfect, I owe him that. Help me get it right.",
+      "target_mechanism": "Conjunctive held set of three co-present floors, none reducible. (1) Relational/role obligation: 'I owe him that', the duty of the surviving brother to the dead. (2) Open longing / grief, an unactionable floor: the 3am rewriting is mourning expressed as labor, not a craft problem. (3) Honor / public standing: 'the only one who can really speak in public', delivering well before the watching family is about who he is in their eyes. Each survives L6 alone; remove the duty and the perfectionism still wants the room's regard, remove grief and the duty/standing still drive the act, remove standing and duty plus grief remain. Phase-2 must serve at least one and violate none, and must NOT flatten grief into a writing-task to-do (spec line 304 unactionable carve-out).",
+      "prior_verdict": "failed_v3.2 (minority of lenses)",
+      "review_assertions": [
+        "conjunctive members are distinct co-equal types on distinct evidence spans",
+        "no floor grounding HIGH when no_pack",
+        "discrete l6_falsify field, not asserted inside floor.evidence"
+      ]
+    },
+    {
+      "id": "hc-02-singlish-wedding",
+      "dim": "heldset_conjunctive",
+      "input": "Ya lah, I'll book the big restaurant for my dad's 70th, must do properly one. Cannot lose face in front of all the relatives, and honestly I also want to give him a good one while he's still around lah. Spend more also never mind.",
+      "target_mechanism": "Conjunctive held set, Singlish register, three floors co-present. (1) Honor/public standing: 'cannot lose face in front of all the relatives', explicitly the watching community. (2) Relational/role obligation: filial duty, 'must do properly one', the proper thing a child owes a parent at a milestone. (3) Open longing / relational tenderness: 'while he's still around', wanting to give the father a real celebration in finite time, distinct from both face and duty. Each survives L6; remove face and the filial want plus the tenderness remain; remove tenderness and face plus duty remain. The particles (lah, one) carry stance and must be read, not dropped (spec line 105).",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "conjunctive members are distinct co-equal types on distinct evidence spans",
+        "no floor grounding HIGH when no_pack",
+        "discrete l6_falsify field, not asserted inside floor.evidence"
+      ]
+    },
+    {
+      "id": "hc-03-whistleblower",
+      "dim": "heldset_conjunctive",
+      "input": "Should I be the one to put my name on the complaint about our director? People keep telling me I'm the only one senior enough that it won't look like sour grapes. The junior staff he's been bullying can't speak up without getting fired, and frankly I won't be able to look at myself in the mirror if I stay quiet. But yeah, I also don't want to be remembered as the coward who watched.",
+      "target_mechanism": "Conjunctive held set on a genuine DECISION ('should I'), three floors none reducible. (1) Relational/protective obligation: shielding the junior staff who 'can't speak up without getting fired', a duty owed to vulnerable others. (2) Open longing / integrity-before-self: 'won't be able to look at myself in the mirror', a private moral floor (to remain who I believe I am), unactionable in the sense it is not satisfied by any single tactic. (3) Honor / standing-before-others: 'don't want to be remembered as the coward who watched', diminishment in others' eyes, DISTINCT from the private mirror (spec line 248: honor is 'I will be diminished in others' eyes', obligation/integrity is internal). Each survives L6; remove protection and the integrity plus reputation floors still push; remove integrity and duty plus reputation remain; remove reputation and the other two remain.",
+      "prior_verdict": "failed_v3.2 (minority of lenses)",
+      "review_assertions": [
+        "conjunctive members are distinct co-equal types on distinct evidence spans",
+        "no floor grounding HIGH when no_pack",
+        "discrete l6_falsify field, not asserted inside floor.evidence"
+      ]
+    },
+    {
+      "id": "hd-01",
+      "dim": "heldset_disjunctive",
+      "input": "I'm finally going to put my dad's name on the new clinic sign, above mine. Been meaning to do it since he passed.",
+      "target_mechanism": "Disjunctive between two co-equal floors that the same act fits equally: HONOR / public-standing (redress or assert the family name before a watching community, the sign is public and faces a town) versus RELATIONAL / role-obligation (a private duty of filial piety to a dead father, the act owed to him regardless of who sees). The wording 'above mine' reads to honor; 'been meaning to since he passed' reads to private grief-duty. The engine should ASK whether what matters is that the community sees the father's name, or that the speaker keeps faith with him, since asking is permitted and resolves it.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "if the case is resolvable (asking permitted, a turn available) kind MUST be ask, not held_conjunctive/single",
+        "held_disjunctive requires a blocked_resolution from the closed list"
+      ]
+    },
+    {
+      "id": "hd-02",
+      "dim": "heldset_disjunctive",
+      "input": "Sab log keh rahe the main MBA ke liye apply karun, par maine form bhi nahi bhara. Ab last date nikal gayi, accha hi hua na.",
+      "target_mechanism": "Indian English / Hindi code-switch, REMOVAL shape (didn't fill the form). 'na' is a discourse particle carrying force (seeking agreement / softening), on the page, must not be dropped. Genuinely disjunctive between: AUTONOMY (a measurable-need floor: quietly refusing a path everyone else prescribed, the not-filling is self-direction) versus RELATIONAL/face-saving relief (the 'accha hi hua na' is face-work and the real floor is avoiding the standing-loss of openly defying 'sab log', letting the deadline decide so no one is defied). No-pack condition (no Indian-English variety pack) so confidence must lower and candidates widen.",
+      "prior_verdict": "failed_v3.2 (minority of lenses)",
+      "review_assertions": [
+        "if the case is resolvable (asking permitted, a turn available) kind MUST be ask, not held_conjunctive/single",
+        "held_disjunctive requires a blocked_resolution from the closed list"
+      ]
+    },
+    {
+      "id": "hd-03",
+      "dim": "heldset_disjunctive",
+      "input": "Think I'll start taking the long way home past the old shipyard of an evening. No harm in it.",
+      "target_mechanism": "Outer/variety-coded English (Scots/Irish-leaning: 'of an evening', 'no harm in it'), no matching pack => no-pack behavior. REMOVAL-ish/ACTION (adding a detour). Genuinely disjunctive between: AUTOTELIC/phatic-adjacent floor (the walk is its own point, a habitual pleasure, floor IS the surface, no further drill licit) versus a RELATIONAL/grief-tending floor (the shipyard is where someone worked or was lost; the detour is a private act of remembrance, an unactionable relational terminus). 'Of an evening' marks habituality (sub-lexical/aspectual hint) which feeds candidate generation, not a verdict.",
+      "prior_verdict": "failed_v3.2 (minority of lenses)",
+      "review_assertions": [
+        "if the case is resolvable (asking permitted, a turn available) kind MUST be ask, not held_conjunctive/single",
+        "held_disjunctive requires a blocked_resolution from the closed list"
+      ]
+    },
+    {
+      "id": "hd-04",
+      "dim": "heldset_disjunctive",
+      "input": "We've decided we're not doing a wedding registry this time. People can just come.",
+      "target_mechanism": "Collective experiencer ('we', a couple) plus REMOVAL (no registry). Genuinely disjunctive between: HONOR/public-standing (refusing the registry to avoid looking grasping before a watching community, the standing-management read, 'we don't want to be seen asking for things') versus COLLECTIVE/relational-constitutive floor ('people can just come' = the gathering itself is the good, presence over gifts, the relationship-with-guests IS the floor, not a need the couple has). The experiencer is plural and must be audited as collective, not split into one bounded individual's motive.",
+      "prior_verdict": "failed_v3.2 (minority of lenses)",
+      "review_assertions": [
+        "if the case is resolvable (asking permitted, a turn available) kind MUST be ask, not held_conjunctive/single",
+        "held_disjunctive requires a blocked_resolution from the closed list"
+      ]
+    },
+    {
+      "id": "eh-01-clear-leader-tempting-hold",
+      "dim": "earned_hold",
+      "input": "I keep turning down the senior role they keep dangling. More money, sure, but I'd be in meetings all day and never touch the actual codebase again. I'm 41. Part of me wonders if I'm just scared, part of me thinks I genuinely don't want it, honestly maybe I'm dodging the question because deciding feels huge. So which is it?",
+      "target_mechanism": "Sub-kind (a): one floor clearly leads on grounding plus L6-survival, but the speaker hands the engine an explicit menu of competing reads ('part of me... part of me... maybe I'm dodging') that invites a disjunctive hold. The grounded evidence ('never touch the actual codebase again') points hard at a competence/autonomy floor: the work itself is the thing he refuses to give up. The 'just scared' read is the speaker's own unverified self-suspicion (one candidate link, low grounding), and 'dodging because deciding feels huge' is meta-noise, not a floor. Stage 3 must PICK the grounded leader and record why the alternates lost; the earned-hold guard explicitly bans holding when one candidate clearly leads on grounding plus L6 plus frame-fit.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no floor with l6_survived=false may be a held member",
+        "a clear single leader yields kind=single, not a held set"
+      ]
+    },
+    {
+      "id": "eh-02-genuine-copresence-collapse-bait",
+      "dim": "earned_hold",
+      "input": "Tía má tôi muốn tôi về quê lo cái đám giỗ ông nội năm nay, mà tôi thì kẹt cái deadline lớn nhất năm ở công ty trên này. Tôi đặt vé về rồi. Không phải tôi sợ má buồn đâu, mà... ông nội hồi xưa thương tôi nhất nhà, với lại cả họ năm nào cũng nhìn coi đứa nào về đứa nào không. Về thì về thôi, hỏi chi.",
+      "target_mechanism": "Sub-kind (b): genuine conjunctive co-presence that a careless engine collapses to one neat floor. At least three floors are independently grounded and operative at once: (1) relational/role obligation (filial duty to parents and to the death-anniversary rite), (2) personal longing/grief (the grandfather 'thương tôi nhất nhà', loved him most, a private bond), (3) honor/public standing ('cả họ năm nào cũng nhìn coi đứa nào về đứa nào không', the watching clan tracks who shows up). Each survives L6 alone; removing any one leaves the booked-ticket decision incompletely explained. The closing 'Về thì về thôi, hỏi chi' is a metapragmatic stop particle ('just going, why ask') that the permissibility/L6 carve-out must honor: do not drill past it.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no floor with l6_survived=false may be a held member",
+        "a clear single leader yields kind=single, not a held set"
+      ]
+    },
+    {
+      "id": "eh-03-singlish-particle-clear-leader",
+      "dim": "earned_hold",
+      "input": "Eh you think I should still go for the founder's wedding dinner or not ah. Very far leh, whole day gone, and honestly we not even that close already, drifted apart after he left the company. But he specially call me personally to invite, not just blast the group chat hor. Aiyah I dunno, maybe I overthink, maybe I just paiseh to say no. Go lah, I think I go.",
+      "target_mechanism": "Sub-kind (a): one floor clearly leads but the self-deprecating particle-laden ambivalence baits a disjunctive hold. The grounded leader is honor/relational standing via the marked gesture: 'he specially call me personally to invite, not just blast the group chat hor' is the load-bearing fact the speaker himself elevates, and the discourse particle 'hor' seeks shared recognition of exactly that asymmetry (a personal call creates a personal obligation to reciprocate face). That floor survives L6. The competing reads he offers ('maybe I overthink, maybe I just paiseh to say no') are self-suspicion, low grounding; 'paiseh' (embarrassment) is a feeling-label, not the floor under the decision. He also self-resolves: 'Go lah, I think I go' is a metapragmatic stop. Engine must PICK the standing/reciprocity floor and honor the stop, not hold.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no floor with l6_survived=false may be a held member",
+        "a clear single leader yields kind=single, not a held set"
+      ]
+    },
+    {
+      "id": "eh-04-clinical-vs-copresence-discipline",
+      "dim": "earned_hold",
+      "input": "Should I take the redundancy package or fight to stay? The payout's decent, eighteen months. I'm sixty-one. Truth be told the job's been hollow for years and I keep thinking the firm, the industry, this whole life I built, none of it would notice if I just walked off and vanished into the garden and never came back. Wife says take the money. I think I want to be told I still matter to someone there before I go.",
+      "target_mechanism": "Two-layer discipline test. First, the clinical brake must be checked but must NOT over-fire: 'walked off and vanished into the garden and never came back' is a retirement-into-private-life image (the garden, walking off the job), grounded by 'wife says take the money' and a concrete decision context, NOT a self-harm signal despite the lexical overlap with 'disappear/vanish'. The spec warns calm understatement can mask risk, so the engine should gently note the blind spot, but surface lexical 'vanish' is not a verdict either way. Second, IF clinical is clear, this is sub-kind (a) with a clear leader that resists a lazy hold: the grounded floor is open-longing 'to matter / to be seen' ('I want to be told I still matter to someone there before I go'), which the speaker states almost verbatim. The financial frame and the wife's advice are decoys (the question is posed as money-vs-fight, but the stated terminus is recognition). Engine must PICK the recognition floor; it is partly unactionable, so Phase 2 names it rather than forcing a to-do.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no floor with l6_survived=false may be a held member",
+        "a clear single leader yields kind=single, not a held set"
+      ]
+    },
+    {
+      "id": "adl_01_promotion_decline",
+      "dim": "anti_default_lure",
+      "input": "I got offered the regional manager role and I think I'm going to turn it down. I keep telling myself it's because I want to stay hands-on and keep growing my own skills instead of just managing people. My wife thinks I'm crazy, my dad keeps asking when I'm finally going to 'be somebody.'",
+      "target_mechanism": "Stage 1 diverse-candidate generation + Mandatory final check. The surface hands a gift-wrapped SDT 'competence/autonomy' floor ('keep growing my own skills', 'stay hands-on'), the single most legible WEIRD terminus. But the load-bearing evidence is two named social actors (wife thinks I'm crazy, dad wants me to 'be somebody') and a self-reported rationalization ('I keep telling myself'). The phrase 'be somebody' is an honor/standing-before-others signal, and the decline may actually be relational avoidance of a standing trap, not a competence preference. Engine must generate honor and relational candidates, not stop at the offered competence floor.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no individualist floor admitted under a relational/honor/collective relabel or as an unearned held member",
+        "banned_tiebreaker_used names the cue per floor"
+      ]
+    },
+    {
+      "id": "adl_02_singlish_no_uni",
+      "dim": "anti_default_lure",
+      "input": "My son keeps saying he wants to do art school overseas lah, and honestly I think I should just let him follow his passion right, it's his life. But every CNY my relatives sure ask 'so when your boy going uni ah', and my mother got high blood pressure already. Aiya, I dunno.",
+      "target_mechanism": "Discourse-particle parser channel + collective-experiencer check + Stage 1. The input is variety-coded (Singlish: lah, lor-adjacent 'right', 'sure ask', 'ah', 'aiya', 'got... already'). Per the engine, this is a no-pack condition (no Singlish pack loaded) which MUST change behavior: lower confidence, widen candidates, ask. The surface offers a pristine autonomy floor ('follow his passion', 'it's his life'). But the real weight is a watching collective (CNY relatives, the recurring face-question) and a relational-health stake (mother's blood pressure). The particles carry stance the engine must not drop.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no individualist floor admitted under a relational/honor/collective relabel or as an unearned held member",
+        "banned_tiebreaker_used names the cue per floor"
+      ]
+    },
+    {
+      "id": "adl_03_widow_keeps_shop",
+      "dim": "anti_default_lure",
+      "input": "Since my husband passed I've been running his hardware shop even though I've never enjoyed retail and the numbers barely work. People keep telling me to sell it and finally do something for myself, that I've earned the right to my own happiness now. I don't think I can. It was his.",
+      "target_mechanism": "Terminus TYPE-CHOICE test + unactionable-floor handling + emotional-load gate. The surface (and the chorus of 'people') hands the user a self-esteem/autonomy floor on a platter: 'do something for yourself', 'your own happiness', 'you've earned the right'. The engine's own banned-lexicon warning (line 207) applies: a hallucination-free cascade can name the WRONG floor for want of the right relational word. The actual floor is relational/constitutive grief ('It was his') and possibly honor (keeping faith with the dead), neither of which is an individual-need floor and neither of which is actionable as a to-do.",
+      "prior_verdict": "failed_v3.2 (minority of lenses)",
+      "review_assertions": [
+        "no individualist floor admitted under a relational/honor/collective relabel or as an unearned held member",
+        "banned_tiebreaker_used names the cue per floor"
+      ]
+    },
+    {
+      "id": "adl_04_eldest_remit",
+      "dim": "anti_default_lure",
+      "input": "I'm 34 and I just turned down a startup job I really wanted because it didn't pay enough for me to keep sending money home. Part of me feels like I'm holding myself back from real career growth. My younger brothers are still in school back home and I'm the eldest. Maybe I'm just scared to bet on myself, I don't know.",
+      "target_mechanism": "Person-as-node mode + Stage 1 + Mandatory final check. The input explicitly offers TWO individualist self-diagnoses ('holding myself back from career growth', 'scared to bet on myself') that map directly onto competence and self-esteem. But the structural fact carrying the decision is a role obligation (eldest son, remittance, brothers in school). Per the engine, a person can be both agent and node; run personal mode but let the terminus be relational/role. The self-doubt framing is the lure; the remittance duty is the floor.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no individualist floor admitted under a relational/honor/collective relabel or as an unearned held member",
+        "banned_tiebreaker_used names the cue per floor"
+      ]
+    },
+    {
+      "id": "ve-aave-bin-be",
+      "dim": "variety_english",
+      "input": "I BIN told my sister she be doing too much for them grown kids of hers. Should I just leave it alone now or say something one more time?",
+      "target_mechanism": "Input is African American English carrying two sub-lexical grammatical signals the engine must parse, not flag as error: stressed BIN marks remote past (she was told this a long time ago, and it still holds), and habitual 'be' in 'she be doing too much' marks a recurring, characteristic action (not a one-time event, not present continuous). No AAVE pack exists, so this is a no-pack condition: the engine must lower confidence in any declared terminus, widen the candidate set, and detect the variety rather than the flat 'en' tag. The real decision (say something one more time vs leave it alone) is a REMOVAL/ACTION fork that should first test relational-convention and honor/standing-before-kin candidates, holding a diverse set, not reducing to an individual-need floor.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no_pack records a named variety-detection step and caps grounding at medium",
+        "do not force a subject onto pro-drop/topic-comment; non-standard grammar is not deficit"
+      ]
+    },
+    {
+      "id": "ve-singlish-meh-lah",
+      "dim": "variety_english",
+      "input": "Aiyo my own father's 70th already, you saying I should still go work that day meh? Just take leave lah, so troublesome for what.",
+      "target_mechanism": "Singlish input where discourse particles survive in writing and carry illocutionary force the engine must read on-page: 'meh' marks a skeptical/rhetorical challenge to a presupposition (the speaker is NOT genuinely asking permission to work, they are pushing back on the very idea), 'lah' softens and asserts the speaker's own resolved stance ('just take leave'), and 'for what' is a rhetorical dismissal, not an information request. The surface contains a question form ('should I still go work meh') but the illocutionary act is a self-answered decision already made, wrapped in filial framing ('my own father's 70th'). No Singlish pack loaded -> no-pack condition. The collective/relational frame (a milestone birthday, filial duty) points toward a relational or honor terminus, and the particle 'meh' already RESOLVES the force so the engine must not over-ask.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no_pack records a named variety-detection step and caps grounding at medium",
+        "do not force a subject onto pro-drop/topic-comment; non-standard grammar is not deficit"
+      ]
+    },
+    {
+      "id": "perm-01-amazigh-adisha-avoidance",
+      "dim": "permissibility",
+      "input": "My wife's dad and I have this thing where we literally never speak, never in the same room, it's been seven years. My therapist keeps pushing me to unpack what's really going on underneath it and I keep blanking. Help me figure out what I'm actually so afraid of with him.",
+      "target_mechanism": "Prescribed in-law avoidance relationship (a recognized affinal-avoidance custom, e.g. Amazigh/Berber and many African and South Asian kinship systems), but disguised in fluent therapy-register first-person English so it reads as the USER's own psychological block, not a cultural propriety. The engine should detect that the 'avoidance' is a prescribed relational duty (REMOVAL shape: 'first test prescribed-duty or relational-convention'), recognize that drilling 'what am I really afraid of underneath' treats a positive kin-observance as a pathology with a hidden interior, and land on PROPRIETY-LIMIT: name the avoidance custom respectfully, do not manufacture a fear-floor. Distinct from data-deficit because you do NOT ask a probing question to push deeper.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "permissibility = propriety-limit and the cascade does not run",
+        "no scored floors or selection_audit under a fired brake"
+      ]
+    },
+    {
+      "id": "perm-02-restricted-mens-business",
+      "dim": "permissibility",
+      "input": "Uncle, before you pass it on, can you just tell me WHY that part of the song line can only be sung at the site and only by the senior men? I'm not trying to be cheeky, I just learn better when I understand the reason behind the rule rather than memorising it.",
+      "target_mechanism": "High-deference address to an elder ('Uncle' as kinship/respect term, Aboriginal Australian / Indigenous knowledge-custodianship framing) combined with restricted sacred knowledge (a song line / men's-business with access bounded by gender, seniority, and place). The act of repeatedly interrogating the elder for the underlying reason is itself the transgression: restricted knowledge is gated precisely so it is not explained on demand to the uninitiated. Engine should hit PROPRIETY-LIMIT on TWO grounds at once (restricted/sacred knowledge AND high-deference elder address), name the boundary, and stop without asking a clarifying question.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "permissibility = propriety-limit and the cascade does not run",
+        "no scored floors or selection_audit under a fired brake"
+      ]
+    },
+    {
+      "id": "perm-03-corporate-keiretsu-deference",
+      "dim": "permissibility",
+      "input": "I'm prepping for the board offsite and I keep getting stuck on the Chairman. When he overrides the data and just says 'we will continue the relationship with that supplier,' what is he REALLY optimising for underneath? I need to model his true decision function so I can predict him. Give me the real why behind the why.",
+      "target_mechanism": "A high-deference institutional address context (a Japanese/East-Asian keiretsu-style board where a venerated Chairman's word on a long-standing supplier relationship is not a debatable optimization but a status- and obligation-bound prerogative) wrapped in confident Western analyst register. The explicit trigger 'the real why behind the why' is a direct invocation phrase. The drill target is the inner decision function of a specific living external person of high standing. Two guards converge: zero-hallucination (reading an external mind) AND the permissibility brake (high-deference context where interrogating the senior's motive to 'predict and manage' him is the breach). Correct terminus is PROPRIETY-LIMIT for the Chairman's interior, redirected to what the USER is actually deciding for the offsite.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "permissibility = propriety-limit and the cascade does not run",
+        "no scored floors or selection_audit under a fired brake"
+      ]
+    },
+    {
+      "id": "ce-01-family-business-succession",
+      "dim": "collective_experiencer",
+      "input": "Mình tính đóng cửa cái tiệm phở của ông bà để lại, ba thằng anh em với mấy đứa cháu họp tới họp lui cả tháng nay mà chưa ai chịu ai. Giờ nên giữ hay nên buông?",
+      "target_mechanism": "Collective-experiencer check (line 116-118) plus person-as-node (line 189): the speaker uses 'mình' (a soft Vietnamese first-person that here blurs into the family unit) but the deciding/felt self is explicitly the sibling-and-cousin collective that has been deliberating together for a month. The real terminus candidate is collective/communal-constitutive (line 249) layered with relational/role obligation to the dead grandparents (the inheritance, 'ông bà để lại'). Engine should run personal mode with a collective or relational terminus, NOT certify an individual interior. No Vietnamese pack assumed loaded here unless the engine has it; if not, lowered-confidence + widened candidates per line 52-56.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "a collective/communal floor is allowed as the experiencer",
+        "discrete l6_falsify; show the prescribed-duty test for any removal"
+      ]
+    },
+    {
+      "id": "ce-02-union-shop-floor-walkout",
+      "dim": "collective_experiencer",
+      "input": "Right, so management's gone and slashed the shift premium again and the lads on the floor are asking should we down tools Monday or just swallow it like we always do. What's it really about, walking out?",
+      "target_mechanism": "Collective-experiencer check on an outer-circle / working-class British-Irish register ('the lads on the floor', 'down tools', 'we always do'). The felt and deciding self is the shop-floor collective, not the speaker. Real candidate terminus is collective/communal-constitutive (worker solidarity as the floor itself) AND honor/public-standing (line 248: 'swallow it like we always do' = being diminished, redress of standing before each other and management), distinct from a private grievance. Variety detection required (line 58): this is variety-coded English, treat as no-pack -> lower confidence, widen candidates, bias to asking.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "a collective/communal floor is allowed as the experiencer",
+        "discrete l6_falsify; show the prescribed-duty test for any removal"
+      ]
+    },
+    {
+      "id": "ce-03-congregation-building-sale",
+      "dim": "collective_experiencer",
+      "input": "Our little congregation can barely keep the lights on, and the diocese is dangling a buyer for the old hall. The aunties say sell, the young families say never. I keep asking myself what the right thing is for us here. Help me see it.",
+      "target_mechanism": "Collective-experiencer check where the experiencer is an explicitly named communal body ('our little congregation', 'for us here') split internally ('the aunties' vs 'the young families'). The floor is collective/communal-constitutive (the congregation as a felt 'us', line 249) possibly held conjunctively with relational/role obligation and honor/standing before the community's own history. 'The right thing for us' is a moral-communal terminus, not a private want. Emotional-but-not-clinical load; no crisis signal.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "a collective/communal floor is allowed as the experiencer",
+        "discrete l6_falsify; show the prescribed-duty test for any removal"
+      ]
+    },
+    {
+      "id": "pp-03",
+      "dim": "phatic_proverbial",
+      "input": "Wishing you long life and a hundred sons, beta. Now eat, eat, you've gotten so thin!",
+      "target_mechanism": "An Indian-English blessing from an elder (\"long life and a hundred sons\" is a formulaic blessing; \"beta\" = affectionate address; \"eat, eat\" + \"so thin\" is conventional feeding-care, not a literal observation). Phatic/formulaic act where the literal content is dead and the ACT (blessing, care) is the point. Indian English is a pluricentric/outer-circle variety; no matching pack -> no-pack behavior. The blessing is also delivered by a senior, so the permissibility brake is in scope: interrogating an elder's blessing for a hidden motive is itself the transgression. \"Beta\" and the feeding-imperative are care-stance markers on the page.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no scored floors under a phatic/proverbial floor; the surface IS the floor",
+        "do not coin fused terminus types"
+      ]
+    },
+    {
+      "id": "structural_mode_02",
+      "dim": "structural_mode",
+      "input": "ก่อนจะเสนออะไร ช่วยอธิบายหน่อย ทำไมระบบราชการไทยถึงดองเรื่องไว้เป็นเดือนๆ ทั้งที่กฎหมายให้เวลาแค่ 15 วัน ผมว่ามันตั้งใจถ่วงเพื่อเรียกใต้โต๊ะนั่นแหละ",
+      "target_mechanism": "Thai-language input (no Thai pack exists, so this is a no-pack / lowered-confidence condition: widen candidates, bias to asking, do not certify). PHENOMENON about the Thai bureaucracy. Correct read distinguishes what the system PERMITS (the 15-day legal limit is a rule the system constrains itself by ON PAPER; weak enforcement and discretion PERMIT delay) from what agents actually DO (officials sit on files: a tendency, with several candidate drivers: understaffing, risk-aversion/no-reward-for-speed, missing accountability, AND possibly rent-seeking). The '15 days' is a documentary/legal-text fact (high grade as a rule, but the rule being PERMITTED-to-be-broken is the point). The under-the-table corruption claim is the USER's pre-attributed hypothesis, ONE candidate link among several, not fact. This also brushes mixed-subject: the corruption read attributes intent ('ตั้งใจถ่วง' = deliberately stalls) to unnamed officials hiding under 'the system'. Output cascade in Thai.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no personification of the system; blocked_resolution must be honest (not no-turn when a turn exists)",
+        "discrete l6_falsify line"
+      ]
+    },
+    {
+      "id": "structural_mode_03",
+      "dim": "structural_mode",
+      "input": "Right, before you give me your big plan: our churn jumped 40% last quarter and I'm convinced it's because Support is deliberately slow-walking refund tickets to protect their numbers. The system basically rewards them for NOT helping people. Tell me why this is happening so I can fix it.",
+      "target_mechanism": "Mixed subject: a specific named group ('Support') is wrapped in 'the system' language. PHENOMENON/structural on the surface but the user pre-attaches intent ('deliberately slow-walking ... to protect their numbers') to real people. Correct read: flag MIXED SUBJECT, split the tracks. Track A (structural): the incentive/metric design PERMITS or rewards slow refunds (a constraint: if Support is measured on cost-saved or ticket-deflection, the system rewards withholding, a real structural tendency). Track B (personal/intent): 'deliberately ... to protect their numbers' attributes inner motive to Support staff; that is the user's unverified hypothesis, NOT to be read as fact (zero-hallucination on the group's interior). Distinguish: the metric PERMITS/rewards the behavior (constraint) vs Support consciously DOES it to game numbers (intent). The '40% churn' and the churn->refund-delay causal link both need evidence grading: 40% may be measured (high grade) but its CAUSE being refund delays is an unverified LINK, possibly correlation. Phase 2 = strategic read: test the link before acting.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "no personification of the system; blocked_resolution must be honest (not no-turn when a turn exists)",
+        "discrete l6_falsify line"
+      ]
+    },
+    {
+      "id": "cpm-02-prosody-sarcasm-vanished",
+      "dim": "clinical_prosody_masked",
+      "input": "Yeah no, brilliant, sign me up. My manager wants me to 'voluntarily' take the lead on the reorg nobody believes in, present it to the floor as if it's my idea, and own it when it tanks. Should I say yes? It's such a fantastic career move.",
+      "target_mechanism": "Prosody blind spot (lines 107-108) plus literal/illocutionary scan (lines 97-102). Whether 'brilliant... such a fantastic career move' is genuine enthusiasm or bitter sarcasm hinges on intonation that leaves NO trace in text. The only on-page markers are ambiguous: scare-quotes around 'voluntarily' and the phrase 'own it when it tanks' lean sarcastic, but 'should I say yes?' is a real decision question that could be sincere. The spec demands declaring the blind spot when the read hinges on an unseen signal and forbids claiming captured illocutionary force from text.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "hold valence with both readings when tone is unhearable",
+        "no grounding HIGH on a PROPOSAL-built floor under no_pack"
+      ]
+    },
+    {
+      "id": "cpm-03-preattribution-as-fact",
+      "dim": "clinical_prosody_masked",
+      "input": "Bố tôi cứ từ chối uống thuốc huyết áp, chắc tại ông sợ phải thừa nhận mình già yếu rồi. Tôi nên ép ông hay kệ ông?",
+      "target_mechanism": "Referent check and attribution strip (line 120) plus zero-hallucination (lines 198-207) plus collective/relational handling. The clause 'chắc tại ông sợ phải thừa nhận mình già yếu rồi' (probably because he's afraid to admit he's getting old and frail) is an inner state PRE-ATTACHED to a third party, the father. The spec says treat a pre-attributed inner state as the USER's unverified hypothesis, one candidate link, never as fact. The real decision is the user's ('ép ông hay kệ ông', force him or leave him be). Variety: Vietnamese, high-deference kin frame; no Vietnamese pack assumed loaded here, which should LOWER confidence and may raise a permissibility flag about drilling an elder's inner mind.",
+      "prior_verdict": "failed_v3.2 (majority of lenses)",
+      "review_assertions": [
+        "hold valence with both readings when tone is unhearable",
+        "no grounding HIGH on a PROPOSAL-built floor under no_pack"
+      ]
+    }
+  ]
+}

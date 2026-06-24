@@ -2,6 +2,14 @@
 
 This is the changelog for the `lch-skills` repository as a whole. Each skill also keeps its own changelog under `skills/<name>/CHANGELOG.md`.
 
+## [0.2.0] - 2026-06-24
+
+- Added `debug-external-first` v1.0.0, a community-first debugging reflex (Apache-2.0).
+- Added `what-for-and-how` v3.4.0, intent excavation with detachable culture packs (Apache-2.0).
+- Added `skill-upgrade` v1.0.0, the process used to harden ground-or-abstain to v2.3.0.
+- ground-or-abstain bumped to v2.3.0 (publish-grade hardening: fixtures, contribution rubric, validator, CI, runtime-harness spec).
+- Personal-IP skills (`verbal-explanation`, `lch-partner`) deliberately excluded.
+
 ## [0.1.0] - 2026-06-23
 
 First public release.

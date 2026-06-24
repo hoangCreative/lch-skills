@@ -1,0 +1,160 @@
+cff-version: 1.2.0
+message: "If you use this skill, please cite it using the metadata below."
+title: "what-for-and-how: two-engine intent excavation with terminus-based stopping and pluggable culture-packs"
+abstract: "An agent skill with a universal engine and pluggable culture-packs that runs two phases before any plan, recommendation, or causal read lands. Phase 1 drills What for layer by layer until it reaches a terminus defined by the property of the last link, not a fixed count, using two distinct engines: a private-longing engine for a person's inner motive (guarded by zero hallucination) and a structural-logic engine for an observed system (guarded by split node and link evidence). Phase 2 bridges from the terminus back to the surface question, executing step 1 for personal cases and offering a strategic read for observed systems. Includes a tier-0 router, an input parser for sarcasm, masked subjects, language-relative subjecthood, and pre-attribution, a clinical-handoff brake, a relational and role-bound terminus, and proposals spoken aloud as debts. The culture-bound terminus map, speech-act repertoire, and parser signals load from a culture-pack; Vietnamese is the first reference pack. Hardened by a model comparison, a 1000-case simulated stress audit, a multi-council linguistic and cultural critique, and a dogfood."
+type: software
+authors:
+  - family-names: "Le"
+    given-names: "Cong Hoang"
+    email: "leconghoangstudio@gmail.com"
+version: "3.4.0"
+date-released: "2026-06-22"
+license: Apache-2.0
+repository-code: "https://github.com/hoangCreative/what-for-and-how"
+keywords:
+  - claude-code
+  - agent-skills
+  - decision-making
+  - intent-excavation
+  - root-cause-analysis
+  - psychology
+  - motivation
+  - ai-agents
+  - methodology
+  - cross-cultural
+  - pragmatics
+  - culture-packs
+references:
+  - type: article
+    title: "The problem with '5 whys'"
+    authors:
+      - family-names: "Card"
+        given-names: "Alan J."
+    journal: "BMJ Quality & Safety"
+    volume: 26
+    issue: 8
+    year: 2017
+    doi: "10.1136/bmjqs-2016-005849"
+  - type: book
+    title: "Toyota Production System: Beyond Large-Scale Production"
+    authors:
+      - family-names: "Ohno"
+        given-names: "Taiichi"
+    publisher:
+      name: "Productivity Press"
+    year: 1988
+  - type: article
+    title: "A Means-End Chain Model Based on Consumer Categorization Processes"
+    authors:
+      - family-names: "Gutman"
+        given-names: "Jonathan"
+    journal: "Journal of Marketing"
+    volume: 46
+    issue: 2
+    year: 1982
+    doi: "10.1177/002224298204600207"
+  - type: article
+    title: "Laddering Theory, Method, Analysis, and Interpretation"
+    authors:
+      - family-names: "Reynolds"
+        given-names: "Thomas J."
+      - family-names: "Gutman"
+        given-names: "Jonathan"
+    journal: "Journal of Advertising Research"
+    volume: 28
+    issue: 1
+    year: 1988
+    doi: "10.1080/00218499.1988.12467766"
+  - type: article
+    title: "Using laddering to understand and leverage a brand's equity"
+    authors:
+      - family-names: "Wansink"
+        given-names: "Brian"
+    journal: "Qualitative Market Research"
+    volume: 6
+    issue: 2
+    year: 2003
+    doi: "10.1108/13522750310470118"
+  - type: book
+    title: "The Nature of Human Values"
+    authors:
+      - family-names: "Rokeach"
+        given-names: "Milton"
+    publisher:
+      name: "The Free Press"
+    year: 1973
+  - type: book
+    title: "Treatise on Critical Reason"
+    authors:
+      - family-names: "Albert"
+        given-names: "Hans"
+    publisher:
+      name: "Princeton University Press"
+    year: 1985
+  - type: article
+    title: "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being"
+    authors:
+      - family-names: "Ryan"
+        given-names: "Richard M."
+      - family-names: "Deci"
+        given-names: "Edward L."
+    journal: "American Psychologist"
+    volume: 55
+    issue: 1
+    year: 2000
+    doi: "10.1037/0003-066X.55.1.68"
+  - type: book
+    title: "Internal Family Systems Therapy (2nd ed.)"
+    authors:
+      - family-names: "Schwartz"
+        given-names: "Richard C."
+      - family-names: "Sweezy"
+        given-names: "Martha"
+    publisher:
+      name: "Guilford Press"
+    year: 2020
+  - type: article
+    title: "Children's Questions: A Mechanism for Cognitive Development"
+    authors:
+      - family-names: "Chouinard"
+        given-names: "Michelle M."
+    journal: "Monographs of the Society for Research in Child Development"
+    year: 2007
+  - type: book
+    title: "Politeness: Some Universals in Language Usage"
+    authors:
+      - family-names: "Brown"
+        given-names: "Penelope"
+      - family-names: "Levinson"
+        given-names: "Stephen C."
+    publisher:
+      name: "Cambridge University Press"
+    year: 1987
+  - type: article
+    title: "The Repertoire of Nonverbal Behavior: Categories, Origins, Usage, and Coding"
+    authors:
+      - family-names: "Ekman"
+        given-names: "Paul"
+      - family-names: "Friesen"
+        given-names: "Wallace V."
+    journal: "Semiotica"
+    volume: 1
+    issue: 1
+    year: 1969
+    doi: "10.1515/semi.1969.1.1.49"
+  - type: book
+    title: "Social Motivations for Codeswitching: Evidence from Africa"
+    authors:
+      - family-names: "Myers-Scotton"
+        given-names: "Carol"
+    publisher:
+      name: "Clarendon Press / Oxford University Press"
+    year: 1993
+  - type: book
+    title: "A Vietnamese Reference Grammar"
+    authors:
+      - family-names: "Thompson"
+        given-names: "Laurence C."
+    publisher:
+      name: "University of Hawaii Press"
+    year: 1987

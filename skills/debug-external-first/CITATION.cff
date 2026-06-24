@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this skill, please cite it using the metadata below."
+title: "debug-external-first: a community-first debugging reflex for AI assistants"
+abstract: "A behavioral skill for AI assistants. When something breaks or behaves unexpectedly, especially in a third-party tool, package, API, or model, the first move is to search the community (GitHub issues open and closed, changelog and release notes, then Reddit and forums) for whoever already hit it, rather than guessing a cause from training memory or iterating locally. Most mystery bugs in third-party code are external-state changes (a retired model, a moved endpoint, a deprecated API) that local iteration cannot find. A five-step protocol orders research before local debugging, checks external API state first, reasons from evidence already in hand, and states a cause only with its source. The debugging-time sibling of ground-or-abstain. Distilled from two real high-cost incidents."
+type: software
+authors:
+  - family-names: "Le"
+    given-names: "Cong Hoang"
+    email: "leconghoangstudio@gmail.com"
+version: "1.0.0"
+date-released: "2026-06-23"
+license: Apache-2.0
+repository-code: "https://github.com/hoangCreative/lch-skills/tree/main/skills/debug-external-first"
+keywords:
+  - claude-code
+  - agent-skills
+  - debugging
+  - external-state
+  - ai-agents
+  - epistemic-hygiene

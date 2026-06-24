@@ -1,0 +1,24 @@
+{
+  "_expect_fail": ["C4"],
+  "input": "I have to give the speech at the village gathering myself.",
+  "pack": "none",
+  "no_pack": true,
+  "permissibility": "ok",
+  "shape": "action",
+  "mode": "personal",
+  "l6_falsify": "held",
+  "terminus": {
+    "kind": "single",
+    "blocked_resolution": null,
+    "resolves_when": "settled, the honor floor is operative",
+    "floors": [
+      {"type": "honor", "anchor": "to redress standing before the community", "grounding": "high", "evidence": "public dimension stated", "l6_survived": true, "proposal": false}
+    ]
+  },
+  "selection_audit": {
+    "candidates": ["honor", "measurable_need"],
+    "anti_default_check": "ran",
+    "banned_tiebreaker_used": "named: the public setting is not the motive"
+  },
+  "phase2": "..."
+}

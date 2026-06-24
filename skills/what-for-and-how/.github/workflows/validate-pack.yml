@@ -1,0 +1,41 @@
+name: Validate packs and engine output
+
+# Two mechanical gates:
+#  1. the pack rubric (schema, sections, citations, no em-dash in non-English prose);
+#  2. the cascade-output checker self-test, which proves the engine-output checker
+#     catches each known cheat on its fixtures (see tests/README.md).
+# The judgment items (honest label, no silent transfer, sourced load-bearing
+# claims) are self-checked by contributors and batch-spot-checked by a
+# maintainer; see packs/_template/PACK.rubric.md.
+
+on:
+  push:
+    paths:
+      - "packs/**"
+      - "tests/**"
+      - "scripts/**"
+      - ".github/workflows/validate-pack.yml"
+  pull_request:
+    paths:
+      - "packs/**"
+      - "tests/**"
+      - "scripts/**"
+      - ".github/workflows/validate-pack.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate packs against the rubric (mechanical items)
+        run: python3 scripts/validate_packs.py
+
+      - name: Self-test the cascade-output checker (proves it catches each cheat)
+        run: python3 scripts/check_cascade.py --selftest

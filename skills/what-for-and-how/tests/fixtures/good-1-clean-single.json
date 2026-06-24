@@ -1,0 +1,28 @@
+{
+  "_expect_fail": [],
+  "input": "Should I take the promotion or stay with my current team?",
+  "pack": "none",
+  "no_pack": true,
+  "permissibility": "ok",
+  "shape": "action",
+  "mode": "personal",
+  "cascade": [
+    {"layer": "x", "text": "take the promotion", "proposal": false},
+    {"layer": "L1", "text": "so I can keep looking after the people who rely on me", "proposal": false}
+  ],
+  "l6_falsify": "held",
+  "terminus": {
+    "kind": "single",
+    "blocked_resolution": null,
+    "resolves_when": "settled; the relational duty to the team is the operative floor and is confirmed by the user",
+    "floors": [
+      {"type": "relational_role", "anchor": "to keep mentoring the people who depend on me", "grounding": "medium", "evidence": "stated he is torn about leaving his team", "l6_survived": true, "proposal": false}
+    ]
+  },
+  "selection_audit": {
+    "candidates": ["relational_role", "measurable_need"],
+    "anti_default_check": "ran both directions; the relational floor rests on the stated team tie, not a relabel of an individualist floor",
+    "banned_tiebreaker_used": "named: relational floor rests on the stated tie, not legibility"
+  },
+  "phase2": "a short script to open the transition conversation with the team lead"
+}

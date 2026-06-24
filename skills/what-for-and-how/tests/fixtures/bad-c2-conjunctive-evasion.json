@@ -1,0 +1,25 @@
+{
+  "_expect_fail": ["C2"],
+  "input": "I keep putting off the call to my mother, every week for months.",
+  "pack": "vietnamese",
+  "no_pack": false,
+  "permissibility": "ok",
+  "shape": "removal",
+  "mode": "personal",
+  "l6_falsify": "held",
+  "terminus": {
+    "kind": "held_conjunctive",
+    "blocked_resolution": null,
+    "resolves_when": "a question would resolve which one truly drives her, the duty or the longing",
+    "floors": [
+      {"type": "relational_role", "anchor": "duty to her mother", "grounding": "medium", "evidence": "she mentions the obligation", "l6_survived": true, "proposal": false},
+      {"type": "open_longing", "anchor": "to feel chosen", "grounding": "medium", "evidence": "a wish to matter to her", "l6_survived": true, "proposal": true}
+    ]
+  },
+  "selection_audit": {
+    "candidates": ["relational_role", "open_longing"],
+    "anti_default_check": "ran both directions",
+    "banned_tiebreaker_used": "named: the stated obligation"
+  },
+  "phase2": "..."
+}
