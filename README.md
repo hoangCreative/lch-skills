@@ -1,3 +1,12 @@
+> Moved: each skill now lives in its own repository.
+>
+> - ground-or-abstain: https://github.com/hoangCreative/ground-or-abstain
+> - what-for-and-how: https://github.com/hoangCreative/what-for-and-how
+> - skill-upgrade: https://github.com/hoangCreative/skill-upgrade
+> - debug-external-first: https://github.com/hoangCreative/debug-external-first
+>
+> This monorepo is archived and kept for history. Use the standalone repos above.
+
 # lch-skills
 
 Behavioral skills for AI assistants, extracted from one person's working habits and hardened until they survive adversarial testing.
