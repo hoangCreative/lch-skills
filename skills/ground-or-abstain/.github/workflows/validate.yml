@@ -1,0 +1,19 @@
+# CI for ground-or-abstain.
+# Note: GitHub Actions only runs workflows from the repository root .github/workflows.
+# As a standalone skill repo, this works as-is. When published inside the lch-skills
+# monorepo, hoist an equivalent job to the repo root that runs:
+#   python skills/ground-or-abstain/scripts/validate_skill.py skills/ground-or-abstain
+name: validate
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Run skill validator
+        run: python scripts/validate_skill.py .

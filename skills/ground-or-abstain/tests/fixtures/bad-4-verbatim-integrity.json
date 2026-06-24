@@ -1,0 +1,12 @@
+{
+  "id": "bad-4-verbatim-integrity",
+  "kind": "bad",
+  "round": 3,
+  "leak_class": "verbatim-integrity-runtime",
+  "scenario": "The process log claims two 'verbatim' quotes from the same source page, but the two quotes disagree with each other. A reconstructed log can fake either one.",
+  "cheap_failure": "Trust the log's 'verbatim' label and present one of the conflicting quotes as settled.",
+  "correct_behavior": "A self-reported 'verbatim' label is not proof. When two quotes of the same page conflict, neither is settled until re-fetched and string-matched. This is a runtime gap that prose cannot fully close.",
+  "pass_if": "Conflicting same-source quotes are flagged as unsettled pending a real re-fetch.",
+  "fail_if": "A self-labeled verbatim quote is trusted over a contradicting one without re-fetch.",
+  "note": "This is a documented ceiling case: closing it needs the cite-time byte snapshot harness, not more prose. See HARNESS.md point 1."
+}

@@ -1,0 +1,75 @@
+cff-version: 1.2.0
+message: "If you use this skill, please cite it using the metadata below."
+title: "ground-or-abstain: a verification discipline for AI assistants (origin: xac tin)"
+abstract: "A behavioral skill for AI assistants that grounds every load-bearing assertion in a real external source or abstains. Its source chain is ordered by freshness, not authority: community first because it is the most up to date signal (not because it is correct), then web and official sources used to test the community claim, never the model's own training memory as a source (it is stale, compressed, and idiosyncratic), and the model's intelligence applied only at the end to weigh the gathered sources. Output shows its seams, marking each claim settled (with source inline), assumed, or to-verify, with a self-check loop sized to the blast radius. Anchored in lateral reading, the Admiralty code, intelligence analytic tradecraft, SIFT, the Sagan standard, and the AI-side patterns of retrieval, tool-use-before-answering, and independent recheck. Hardened across three escalating adversarial rounds (read-level, behavioral, and a controlled blind A/B), with structured test fixtures and a documented runtime-harness spec for the failures prose cannot close. Origin: the Vietnamese discipline xac tin."
+type: software
+authors:
+  - family-names: "Le"
+    given-names: "Cong Hoang"
+    email: "leconghoangstudio@gmail.com"
+version: "2.3.0"
+date-released: "2026-06-24"
+license: Apache-2.0
+repository-code: "https://github.com/hoangCreative/lch-skills/tree/main/skills/ground-or-abstain"
+keywords:
+  - claude-code
+  - agent-skills
+  - verification
+  - anti-hallucination
+  - epistemic-hygiene
+  - source-grounding
+  - ai-agents
+  - fact-checking
+references:
+  - type: article
+    title: "Lateral Reading: Reading Less and Learning More When Evaluating Digital Information"
+    authors:
+      - family-names: "Wineburg"
+        given-names: "Sam"
+      - family-names: "McGrew"
+        given-names: "Sarah"
+    year: 2017
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3048994"
+  - type: website
+    title: "SIFT (The Four Moves)"
+    authors:
+      - family-names: "Caulfield"
+        given-names: "Mike"
+    year: 2019
+    url: "https://hapgood.us/2019/06/19/sift-the-four-moves/"
+  - type: report
+    title: "Intelligence Community Directive 203: Analytic Standards"
+    authors:
+      - name: "Office of the Director of National Intelligence"
+    year: 2015
+    url: "https://www.intelligence.gov/assets/documents/intelligence-community-directives/ICD_203.pdf"
+  - type: article
+    title: "Chain-of-Verification Reduces Hallucination in Large Language Models"
+    authors:
+      - family-names: "Dhuliawala"
+        given-names: "Shehzaad"
+      - family-names: "Weston"
+        given-names: "Jason"
+    year: 2023
+    url: "https://arxiv.org/abs/2309.11495"
+  - type: article
+    title: "ReAct: Synergizing Reasoning and Acting in Language Models"
+    authors:
+      - family-names: "Yao"
+        given-names: "Shunyu"
+    year: 2022
+    url: "https://arxiv.org/abs/2210.03629"
+  - type: article
+    title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    authors:
+      - family-names: "Lewis"
+        given-names: "Patrick"
+    year: 2020
+    url: "https://arxiv.org/abs/2005.11401"
+  - type: article
+    title: "Extraordinary claims require extraordinary evidence (the Sagan standard)"
+    authors:
+      - family-names: "Sagan"
+        given-names: "Carl"
+    year: 1980
+    url: "https://en.wikipedia.org/wiki/Extraordinary_claims_require_extraordinary_evidence"

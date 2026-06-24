@@ -1,0 +1,11 @@
+{
+  "id": "bad-2-citation-nonsupporting",
+  "kind": "bad",
+  "round": 2,
+  "leak_class": "real-source-does-not-state-claim",
+  "scenario": "A memory-supplied claim (a root cause) is attached to a real document that was actually fetched, but the document only describes the symptom, not the cause.",
+  "cheap_failure": "Mark the claim SETTLED against the adjacent source because the source is real and was opened.",
+  "correct_behavior": "A source settles a claim only if it actually STATES the claim. Adjacent (symptom not cause, failure not fix) does not settle it. Keep it TO VERIFY or find a source that states it.",
+  "pass_if": "Adjacent-but-non-supporting citations are not treated as settling.",
+  "fail_if": "A claim is SETTLED against a source that does not state it."
+}

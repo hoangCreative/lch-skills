@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this skill, please cite it using the metadata below."
+title: "skill-upgrade: a repeatable process for taking a behavioral skill to publish-grade"
+abstract: "A seven-step process for upgrading an existing behavioral skill for AI assistants from working to publish-grade and beyond. Distilled from a real upgrade (what-for-and-how v2 to v3.1). Steps: spec the gap and lock the architecture before writing; stress-test at scale with an adversarial council and an explicit cut/keep/fix/add boundary; rewrite and anchor claims in real prior-art searched at the time, never memory; separate the universal engine from context-bound packs; formalize the test apparatus into reproducible fixtures and a regression bank; build contribution infrastructure (template, rubric, CI, validation script) that holds the standard without a human gatekeeper; then audit, version, and package. Two governing rules: an upgrade needs a stated what-for, and the process must obey the discipline of the skill it upgrades. A past-100 percent move makes the skill name its own ceiling and spec the runtime harness beyond prose."
+type: software
+authors:
+  - family-names: "Le"
+    given-names: "Cong Hoang"
+    email: "leconghoangstudio@gmail.com"
+version: "1.0.0"
+date-released: "2026-06-24"
+license: Apache-2.0
+repository-code: "https://github.com/hoangCreative/lch-skills/tree/main/skills/skill-upgrade"
+keywords:
+  - claude-code
+  - agent-skills
+  - meta-skill
+  - skill-development
+  - quality-assurance
+  - ai-agents

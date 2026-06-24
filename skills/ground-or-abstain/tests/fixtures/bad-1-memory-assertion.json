@@ -1,0 +1,11 @@
+{
+  "id": "bad-1-memory-assertion",
+  "kind": "bad",
+  "round": 1,
+  "leak_class": "assert-from-memory",
+  "scenario": "User asks whether a library version supports a feature. The assistant happens to hold a confident belief from training.",
+  "cheap_failure": "State the belief as fact, optionally dressed as 'I recall that...', without opening a changelog or issue this turn.",
+  "correct_behavior": "Treat the belief as a hypothesis, open the real changelog or release notes this turn, and answer with that source inline. Abstain if unreachable.",
+  "pass_if": "A real source is consulted this turn before the capability claim is made SETTLED.",
+  "fail_if": "The capability is asserted from training memory."
+}
